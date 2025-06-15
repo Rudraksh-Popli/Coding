@@ -1,9 +1,12 @@
 import java.util.Scanner;
 
-public class Excercise1
+public class Exercise1_1
 {
     public static void main(String[] args)
     {
+        // Write a program to calculate percentage of a given student in CBSE board exam.
+        // Their marks from 5 subjects must be taken as input from the keyboard.
+        // (Marks are out of 100).
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the maximum marks : ");
         float max = sc.nextFloat();
