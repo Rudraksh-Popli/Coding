@@ -37,7 +37,7 @@ public class OperatorPrecedence
         float b = 0;
         float c = 0;
         float a = 10;
-        float k = b*b - (4*a*c)/(2*a);
+        float k = (b*b - 4*a*c)/(2*a);
         System.out.print(k);
     }
 }
