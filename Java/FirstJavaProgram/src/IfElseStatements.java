@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class If_elseStatements
+public class IfElseStatements
 {
 	public static void main(String[] args)
 	{
