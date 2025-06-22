@@ -8,6 +8,7 @@ class Library
         this.books = new String[100];
         this.no_of_books = 0;
     }
+
     void addBook(String book)
     {
         this.books[no_of_books] = book;
