@@ -64,6 +64,7 @@ class Cuboid extends Rectangel
         return length*breadth*height;
     }
 }
+
 public class PracticeQuestions10
 {
     public static void main(String[] args)
