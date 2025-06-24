@@ -1,3 +1,5 @@
+package com.rp.shape;
+
 public class Circle extends Shape
 {
     Circle(int dim1)

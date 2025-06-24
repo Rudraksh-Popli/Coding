@@ -2,7 +2,6 @@ package com.rp.shape;
 
 public class Shape
 {
-
     int dim1;
     int dim2;
 

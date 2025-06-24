@@ -1,4 +1,5 @@
 package com.rp.shape;
+
 public class Square extends Shape
 {
     Square(int dim1)
