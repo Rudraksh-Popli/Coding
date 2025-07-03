@@ -1,2 +1,5 @@
 print("Hello World")
 print(5)
+print("bye")
+print(17*13)
+print("He clasps the crag with crooked hands;\nClose to the sun in lonely lands,\nRing'd with the azure world, he stands.\nThe wrinkled sea beneath him crawls;\nHe watches from his mountain walls,\nAnd like a thunderbolt he falls.")
