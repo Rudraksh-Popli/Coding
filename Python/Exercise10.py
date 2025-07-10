@@ -4,7 +4,8 @@ import requests
 import json
 
 query = input("What type of news are you interested in? ")
-url = f"https://newsapi.org/v2/everything?q={query}&from=2025-06-10&sortBy=publishedAt&apiKey=3ee08750cd7b485dbf9f203e417b1cfe"
+url = f"https://newsapi.org/v2/everything?q={query}&from=2025-06-10&sortBy=publishedAt&apiKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# Above url is invalid as API key hidden
 r = requests.get(url)
 news = json.loads(r.text)
 # print(news, type(news))
