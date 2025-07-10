@@ -1,5 +1,8 @@
 import argparse
 import requests
+import os
+
+os.chdir("/Python")
 
 def download_file(url, local_filename): 
   if local_filename is None:
