@@ -1,6 +1,9 @@
 import time
 import asyncio 
 import requests
+import os
+
+os.chdir("./Python")
 
 
 async def function1():
