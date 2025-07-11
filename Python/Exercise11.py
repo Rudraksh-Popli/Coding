@@ -4,6 +4,9 @@
 import time
 from win10toast import ToastNotifier
 import datetime
+import os
+
+os.chdir("./Python")
 
 
 def getTimeInput():
@@ -36,5 +39,6 @@ def starttime(time_interval):
 
 
 if __name__ == '__main__':
+    os.chdir("./Python")
     time_interval = getTimeInput()
     starttime(time_interval)
