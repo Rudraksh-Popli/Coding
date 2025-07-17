@@ -32,12 +32,12 @@ do
         console.log("Number entered is smaller");
         guess = prompt("Enter again!! : ");
         guess = Number.parseInt(guess);
-        ++chances; //To increment the number of chances taken
+        ++chances; // To increment the number of chances taken
         continue;
     }
 }
 
-while (guess != number); //break the loop if number entered is equal to the number generated
+while (guess != number); // break the loop if number entered is equal to the number generated
 
 let score = 100 - chances; //To store the score of your game
 console.log("\nCongratulations🥳🥳\nThe number generated was", number + " and you guessed it right😁\nYour final score is", score);
