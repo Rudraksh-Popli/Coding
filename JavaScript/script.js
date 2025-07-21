@@ -47,6 +47,6 @@
 //   document.write("Please allow me to write")
 // }
 
-window.console.log(window)
-console.log(document.body)
-document.body.style.background = "yellow"
+// window.console.log(window)
+// console.log(document.body)
+// document.body.style.background = "yellow"
