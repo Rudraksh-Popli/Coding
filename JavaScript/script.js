@@ -56,8 +56,17 @@
 // let arr = Array.from(document.body.childNodes)
 // console.log(arr)
 
-console.log(document.body.firstChild)
-a = document.body.firstChild
-console.log(a.parentNode)
-console.log(a.parentElement)
-console.log(a.firstChild.nextSibling)
+// console.log(document.body.firstChild)
+// a = document.body.firstChild
+// console.log(a.parentNode)
+// console.log(a.parentElement)
+// console.log(a.firstChild.nextSibling)
+
+const changeBgRed = () =>
+{
+  document.body.firstElementChild.style.background = "red"
+}
+
+let b = document.body
+console.log("First child of b is: ", b.firstChild)
+console.log("First Element child of b is: ", b.firstElementChild)
