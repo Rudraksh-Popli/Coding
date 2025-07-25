@@ -71,11 +71,28 @@
 // console.log("First child of b is: ", b.firstChild)
 // console.log("First Element child of b is: ", b.firstElementChild)
 
-let t = document.body.firstElementChild.firstElementChild
-console.log(t)
-console.log(t.rows)
-console.log(t.caption)
-console.log(t.tHead.firstElementChild)
-console.log(t.tFoot)
-console.log(t.tBodies)
-console.log(t.rows[1].rowIndex)
+// let t = document.body.firstElementChild.firstElementChild
+// console.log(t)
+// console.log(t.rows)
+// console.log(t.caption)
+// console.log(t.tHead.firstElementChild)
+// console.log(t.tFoot)
+// console.log(t.tBodies)
+// console.log(t.rows[1].rowIndex)
+
+// Change the card title to red
+let ctitle = document.getElementById("firstcardtitle")
+ctitle.style.color = "blue"
+
+let ctitles = document.querySelectorAll(".card-title")
+ctitles[0].style.color = "blue"
+ctitles[1].style.color = "red"
+ctitles[2].style.color = "green"
+console.log(ctitles)
+
+document.querySelector(".this").style.color = "black"
+document.querySelector(".this").style.background = "red"
+
+console.log(document.getElementsByTagName("a"))
+console.log(document.querySelector(".card").getElementsByTagName("a"))
+console.log(document.getElementsByName("search"))
