@@ -1,7 +1,4 @@
-console.log("This program adds 14, 12, 11, and 7");
-function addNumbers(a,b,c,d)
-{
-    return a+b+c+d;
-}
-let c = addNumbers(14,12,11,7);
+let c = 1107;
+console.log(c);
+c = "Rudraksh";
 console.log(c);
