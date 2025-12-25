@@ -1,45 +1,54 @@
-// 1. Create a variable of type string and try to add a number to it
+// Arithmetic Operators
+let a = 31;
+let b = 7;
+console.log("a + b =", a + b);
+console.log("a - b =", a - b);
+console.log("a * b =", a * b);
+console.log("a / b =", a / b);
+console.log("a % b =", a % b);
+console.log("a ** b =", a ** b);
+console.log("a =", a);
+console.log("a++ =", a++);
+console.log("a =", a);
+console.log("++a =", ++a);
+console.log("a =", a);
+console.log("a-- =", a--);
+console.log("a =", a);
+console.log("--a =", --a);
+console.log("a =", a);
 
-let a = "Rudraksh";
-let b = 1412;
-let c = a+b;
-console.log(c);
+// Assignment Operators
+a = 11;
+a += 5;
+a -= 6;
+a *= 2;
+a /= 2;
+a %= 3;
+a **= 2;
+console.log(a);
 
-// 2. Use typeof operator to find the datatype of the string in the last question
+// Comparison Operators
+let a1 = 6;
+let b1 = "6";
+console.log(a1==b1);
+console.log(a1!=b1);
+console.log(a1===b1);
+console.log(a1!==b1);
+console.log(a1>b1);
+console.log(a1<b1);
+console.log(a1>=b1);
+console.log(a1<=b1);
 
-console.log(typeof c);
-
-// 3. Create a const object in JavaScript. Can you change it to hold a number later
-
-const item =
-{
-    "Rudraksh" : 96,
-    "Aarush" : true,
-    "Charles" : false,
-    "John" : null
-};
-
-// item = 6; NO
-
-// 4. Try to add a new key to the const object in Problem 3. Were you able to do it ?
-
-item["Lewis"] = "Hamilton";
-item["Charles"] = "Leclerc";
-console.log(item); // YES
-
-// 5. Write a JavaScript program to create a word-meaning dictionary of 5 words
-
-const dict =
-{
-    "Avert" : "Avoid",
-    "Bestow" : "Give",
-    "Customary" : "Tradition",
-    "Decline" : "Reject",
-    "Furious" : "Angry"
-};
-
-console.log("Meaning of Avert is", dict["Avert"]);
-console.log("Meaning of Bestow is", dict.Bestow);
-console.log("Meaning of Customary is", dict["Customary"]);
-console.log("Meaning of Decline is", dict["Decline"]);
-console.log("Meaning of Furious is", dict["Furious"]);
+// Logical Operators
+let a2 = 67;
+let b2 = 56;
+console.log(a2 > b2 && a2 < 69);
+console.log(a2 < b2 || a2 < 69);
+console.log(!true);
+console.log(!false);
+/* This
+is
+a
+multiline
+comment
+*/
