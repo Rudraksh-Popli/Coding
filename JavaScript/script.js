@@ -1,13 +1,21 @@
-// var a = 45;
-// var a = "p";
-let b = "Rudraksh";
-const author = "Rudraksh";
-b = 4;
-const Rudraksh = 0;
-let c = null;
-let d = undefined;
+// nn bb ss u - Primitive Data Types in JavaScript
+let a = null;
+let b = 345;
+let c = true;
+let d = BigInt("567") + BigInt("3");
+let e = "Rudraksh";
+let f = Symbol("This is a symbol");
+let g;
+let h = undefined;
+console.log(a, b, c, d, e, f, g, h);
+console.log(typeof c);
+
+// Objects - Non Primitive Data Type in JavaScript
+const item =
 {
-    let b = 'this';
-    console.log(b);
-}
-console.log(b);
+    "Rudraksh": true,
+    "Aarush": false,
+    "John": 5,
+    "Charles": undefined
+};
+console.log(item["John"]);
