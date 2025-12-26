@@ -1,54 +1,33 @@
-// Arithmetic Operators
-let a = 31;
-let b = 7;
-console.log("a + b =", a + b);
-console.log("a - b =", a - b);
-console.log("a * b =", a * b);
-console.log("a / b =", a / b);
-console.log("a % b =", a % b);
-console.log("a ** b =", a ** b);
-console.log("a =", a);
-console.log("a++ =", a++);
-console.log("a =", a);
-console.log("++a =", ++a);
-console.log("a =", a);
-console.log("a-- =", a--);
-console.log("a =", a);
-console.log("--a =", --a);
-console.log("a =", a);
+let a = prompt("Hey ! What's your age ?");
+console.log(typeof a);
+a = Number.parseInt(a);
+console.log(typeof a);
+if (a <= 0) {
+    alert("This is an invalid age");
+}
+else if (a < 9) {
+    alert("You are a kid, don't drive");
+}
+else if (a < 18 && a > 9) {
+    alert("You are a kid, drive with supervision");
+}
+else {
+    alert("You can drive");
+}
 
-// Assignment Operators
-a = 11;
-a += 5;
-a -= 6;
-a *= 2;
-a /= 2;
-a %= 3;
-a **= 2;
-console.log(a);
+let b = prompt("Hey ! What's your favourite fruit ?");
+switch (b) {
+    case "Oranges":
+        alert("Oranges are $0.59 a pound.");
+        break;
+    case "Mangoes":
+    case "Papayas":
+        alert("Mangoes and papayas are $2.79 a pound.");
+        break;
+    default:
+        alert("Out of Stock");
+}
 
-// Comparison Operators
-let a1 = 6;
-let b1 = "6";
-console.log(a1==b1);
-console.log(a1!=b1);
-console.log(a1===b1);
-console.log(a1!==b1);
-console.log(a1>b1);
-console.log(a1<b1);
-console.log(a1>=b1);
-console.log(a1<=b1);
-
-// Logical Operators
-let a2 = 67;
-let b2 = 56;
-console.log(a2 > b2 && a2 < 69);
-console.log(a2 < b2 || a2 < 69);
-console.log(!true);
-console.log(!false);
-/* This
-is
-a
-multiline
-comment
-*/
+let c = prompt("Enter Age");
+c = Number.parseInt(c);
+alert("You can" + (c < 18 ? "not drive" : "drive"));
