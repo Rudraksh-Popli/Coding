@@ -1,46 +1,19 @@
-// let sum = 0;
-// let n = prompt("Enter a number");
-// n = Number.parseInt(n);
-// for (let i = 1; i <= n; i++) {
-//     sum += i;
-// }
-// alert("The sum of first " + n + " natural numbers is " + sum);
-
-// let fact = 1;
-// let m = prompt("Enter a number");
-// m = Number.parseInt(m);
-// for (let j = 1; j <= m; j++) {
-//     fact *= j;
-// }
-// alert("The factorial of " + m + " is " + fact);
-
-// let a =
-// {
-//     "Rudraksh": "Popli",
-//     "Aarush": "Popli",
-//     "Charles": "Leclerc",
-//     "Lewis": "Hamilton"
-// };
-// for (let k in a) {
-//     console.log("Surname of " + k + " is " + a[k]);
+// function onePlusAvg(x, y) {
+//     return Math.round(1 + (x + y) / 2);
 // }
 
-// for (let l of "Rudraksh Popli") {
-//     console.log(l);
-// }
+const onePlusAvg = (x, y) => {
+    return Math.round(1 + (x + y) / 2);
+}
 
-// let n = prompt("Enter a number");
-// n = Number.parseInt(n);
-// while (n >= 0) {
-//     console.log(n);
-//     n--;
-// }
+const hello = () => {
+    console.log("Hello World");
+}
 
-let n = prompt("Enter a number");
-n = Number.parseInt(n);
-
-let i = 10;
-do {
-    console.log(i);
-    i++;
-} while (i < n);
+let a = prompt("Enter the first number");
+a = Number.parseInt(a);
+let b = prompt("Enter the first number");
+b = Number.parseInt(b);
+alert("One plus Average of " + a + " and " + b + " is " + onePlusAvg(a, b));
+let c = hello();
+console.log(c);
