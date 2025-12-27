@@ -1,47 +1,35 @@
-const prompt = require('prompt-sync')();
-// 1. Write a program to print the marks of a student in an object using for loop.
-let obj =
-{
-    harry: 98,
-    rohan: 70,
-    aakash: 7
-};
-for (let i = 0; i < Object.keys(obj).length; i++) {
-    console.log("Marks of", Object.keys(obj)[i], "are", obj[Object.keys(obj)[i]]);
+let name1 = "Rudraksh";
+console.log(name1.length);
+for (let i = 0; i < name1.length; i++) {
+    console.log(name1[i]);
 }
+let name2 = "Aarush";
+// Template Literals
+console.log(`${name1} is a "friend" of ${name2}.`); // String Interpolation
+let fruit = "Bana\"na";
+console.log(fruit, fruit.length);
+fruit = 'Bana\'na';
+console.log(fruit, fruit.length);
+fruit = `Bana\`na`;
+console.log(fruit, fruit.length);
+fruit = `Bana\nna`;
+console.log(fruit, fruit.length);
+fruit = `Bana\tna`;
+console.log(fruit, fruit.length);
+fruit = `Bana\rna`;
+console.log(fruit, fruit.length);
 
-// 2. Write the program in Q1 using for in loop.
-for (let i in obj) {
-    console.log("Marks of", i, "are", obj[i]);
-}
-
-// 3. Write a program to print "try again" until the user enters the correct number.
-let correctNumber = 23;
-let notFound = true;
-while (notFound) {
-    let a = prompt("Enter a number : ");
-    a = Number.parseInt(a);
-    if (a == correctNumber) {
-        console.log("You Guessed It!")
-        notFound = false;
-    }
-    else {
-        console.log("Try Again!")
-    }
-}
-
-// 4. Write a function to find mean of 5 numbers.
-const pentaMean = (a, b, c, d, e) => {
-    return ((a + b + c + d + e) / 5);
-}
-let b = prompt("Enter first number : ");
-b = Number.parseInt(b);
-let c = prompt("Enter second number : ");
-c = Number.parseInt(c);
-let d = prompt("Enter third number : ");
-d = Number.parseInt(d);
-let e = prompt("Enter fourth number : ");
-e = Number.parseInt(e);
-let f = prompt("Enter fifth number : ");
-f = Number.parseInt(f);
-console.log("Mean of", b, ",", c, ",", d, ",", e, ",", f, "is", pentaMean(b, c, d, e, f));
+console.log(name1.toUpperCase());
+console.log(name1.toLowerCase());
+console.log(name1.slice(2,4));
+console.log(name1.slice(2));
+let dog = "Big Dog";
+let newdog = dog.replace("Big","Small");
+console.log(newdog);
+let a1 = "This";
+let a2 = "Exists";
+let a3 = a1.concat(a2," Now");
+console.log(a3);
+let oldName = "                         Rudraksh        "
+let newName = oldName.trim();
+console.log(newName);
