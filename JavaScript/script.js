@@ -1,37 +1,57 @@
-// 1. What will the following print in JavaScript ?
-console.log("har\"".length);
-// Prints 4
+// let marks = [90, 87, 65, 85, 96, 75, null, false, "Absent"];
+// console.log(marks);
+// console.log(typeof marks);
+// for (let i = 0; i < marks.length; i++) {
+//     console.log(marks[i]);
+// }
+// console.log(marks[-1]);
+// console.log(marks[10]);
+// marks[10] = 89;
+// marks[1] = 88;
+// console.log(marks);
+// console.log(marks[10]);
+// console.log(marks[9]);
 
-// 2. Explore the includes, startsWith and endsWith function of a string.
-let a = "Rudraksh Popli is a novice programmer";
-console.log(a.endsWith("gamer"));
-console.log(a.endsWith("r"));
-console.log(a.endsWith("e"));
-console.log(a.endsWith("mer"));
-console.log(a.endsWith(" novice programmer"));
-console.log(a.startsWith("gamer"));
-console.log(a.startsWith("r"));
-console.log(a.startsWith("e"));
-console.log(a.startsWith("Rud"));
-console.log(a.startsWith("Rudraksh Popli is a "));
-console.log(a.includes(" "));
-console.log(a.includes("n"));
-console.log(a.includes("i i"));
-console.log(a.includes("Novice"));
-console.log(a.includes("ram"));
+// let thisList = [1, 2, 34, 34, 5, 6, 4];
+// console.log(thisList, typeof thisList);
+// let b = thisList.toString();
+// console.log(b, typeof b);
+// let c = thisList.join("?")
+// console.log(c);
+// let r = thisList.pop();
+// console.log(r, typeof r);
+// console.log(thisList, typeof thisList);
+// let s = thisList.push("69");
+// console.log(s, typeof s);
+// console.log(thisList, typeof thisList);
+// let t = thisList.shift();
+// console.log(t, typeof t);
+// console.log(thisList, typeof thisList);
+// let u = thisList.unshift("23");
+// console.log(u, typeof u);
+// console.log(thisList, typeof thisList);
 
-// 3. Write a program to convert a given string to lowercase.
-const lowerCase = (x) => {
-    return x.toLowerCase();
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+console.log(arr1);
+delete arr1[1];
+console.log(arr1);
+console.log(arr1.length);
+let arr2 = [11, 22, 33, 44, 55, 66, 77, 88, 99, 0];
+let arr3 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 0];
+let arr4 = arr2.concat(arr1, arr3);
+console.log(arr4);
+const compare = (a, b) => {
+    return a - b;
 }
-console.log(lowerCase("John"));
-
-// 4. Extract the amount out of this string - "Please give Rs 1000"
-let str1 = "Please give Rs 1000";
-let amount = Number.parseInt(str1.slice("Please give Rs ".length));
-console.log(amount, typeof amount);
-
-// 5. Try to change 4th character of a given string.
-let str2 = "These are bunch of words";
-str2[3] = "K";
-console.log(str2); // Prints the unchanged given string as strings are immutable
+arr4.sort(compare);
+arr4.reverse();
+console.log(arr4);
+let deletedValeus = arr2.splice(2, 3, 1021, 1022, 1023, 1024, 1025);
+console.log(arr2);
+console.log(deletedValeus, typeof deletedValeus);
+let newArr2 = arr2.slice(3);
+console.log(newArr2);
+console.log(arr2);
+newArr2 = arr2.slice(5,8);
+console.log(newArr2);
+console.log(arr2);
