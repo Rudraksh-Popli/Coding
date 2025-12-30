@@ -1,25 +1,13 @@
-// console.log(console);
-// console.assert(3 > 5);
-// console.assert(3 < 5);
-// console.error("This is an error");
-// let obj = { 1: 3, 2: 4, 3: 5, 4: 6 };
-// console.table(obj);
-// console.warn("Tread Carefully");
-console.log("log");
-console.info("info");
-console.warn("warn");
-console.error("err");
-console.assert("err" != false);
-console.assert("err" == false);
-console.time("p1");
-for (let i = 10; i >= 0; i--) {
-    console.log(31);
+alert("This script is working");
+alert("Enter the value of a");
+let a = prompt("Enter the value of a here", "578");
+a = Number.parseInt(a);
+alert(`You entered "a" of type ${typeof a}.`);
+let write = confirm(`Do you want to write the values of "a" to the page ?`);
+if (write) {
+
+    document.write(a);
 }
-console.timeEnd("p1");
-console.time("p2");
-let i = 10;
-while (i >= 0) {
-    console.log(31);
-    i--;
+else {
+    document.write("Allow me to write");
 }
-console.timeEnd("p2");
