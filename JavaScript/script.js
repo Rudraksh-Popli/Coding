@@ -1,93 +1,56 @@
-// 1. Write a program using prompt function to take input of age as a value from the user and use alert to tell him if he can drive!
-// let age = prompt("Enter your age");
-// age = Number.parseInt(age);
-// if (Number.isNaN(age)) {
-//     alert("Invalid Input!");
-// }
-// else if (age <= 0) {
-//     alert("fr?");
-// }
-// else if (age >= 18) {
-//     alert("You can drive!");
-// }
-// else {
-//     alert("You cannot drive!");
-// }
-
-// 2. In Q1, use confirm to ask the user if he wants to see the prompt again.
-// let age = prompt("Enter your age");
-// age = Number.parseInt(age);
-// let choice;
-// if (Number.isNaN(age)) {
-//     alert("Invalid Input!");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("Invalid Input!");
-//     }
-// }
-// else if (age <= 0) {
-//     alert("fr?");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("fr?");
-//     }
-// }
-// else if (age >= 18) {
-//     alert("You can drive!");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("You can drive!");
-//     }
-// }
-// else {
-//     alert("You cannot drive!");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("You cannot drive!");
-//     }
-// }
-
-// 3. In the previous question, use console.error to log the error if the age entered is negative.
-// let age = prompt("Enter your age");
-// age = Number.parseInt(age);
-// let choice;
-// if (Number.isNaN(age)) {
-//     alert("Invalid Input!");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("Invalid Input!");
-//     }
-// }
-// else if (age <= 0) {
-//     console.error("Invalid Age!");
-//     alert("fr?");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("fr?");
-//     }
-// }
-// else if (age >= 18) {
-//     alert("You can drive!");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("You can drive!");
-//     }
-// }
-// else {
-//     alert("You cannot drive!");
-//     choice = confirm("Want to see the prompt again ?")
-//     if (choice) {
-//         alert("You cannot drive!");
-//     }
-// }
-
-// 4. Write a program to change the url to google.com (Redirection) is user enters a number greater than 4.
-// let num = prompt("Enter a number");
-// num = Number.parseInt(num);
-// if (num > 4) {
-//     window.location = "https://www.google.com";
-// }
-
-// 5. Change the background of the page to yellow, red or any other color based on user input through prompt.
-let colorChoice = prompt("Enter a color");
-document.body.style.backgroundColor = colorChoice;
+/* Use JavaScript to create a game of Snake, Water & Gun. The game should ask you to enter S, W or G. The computer should be able to randomly generate
+S, W or G and declare Win or Loss using alert. Use confirm and prompt wherever required */
+const makeRandomChoice = () => {
+    let computerChoice = Math.floor(Math.random() * 3);
+    if (computerChoice == 0) {
+        return "s";
+    }
+    else if (computerChoice == 1) {
+        return "w";
+    }
+    else {
+        return "g";
+    }
+}
+while (true) {
+    let compChoice = makeRandomChoice();
+    let userChoice = prompt("Choose Snake, Water or Gun (S or W or G)");
+    if (!userChoice) {
+        alert("Game Cancelled!");
+        break;
+    }
+    userChoice = userChoice.toLowerCase();
+    if (userChoice != "s" && userChoice != "w" && userChoice != "g") {
+        alert("Invalid Choice! Try Again.");
+        continue;
+    }
+    else if (userChoice == compChoice) {
+        alert("Tied");
+    }
+    else if (userChoice == "s" && compChoice == "w") {
+        alert("You Won");
+    }
+    else if (userChoice == "s" && compChoice == "g") {
+        alert("Computer Won");
+    }
+    else if (userChoice == "w" && compChoice == "s") {
+        alert("Computer Won");
+    }
+    else if (userChoice == "w" && compChoice == "g") {
+        alert("You Won");
+    }
+    else if (userChoice == "g" && compChoice == "s") {
+        alert("You Won");
+    }
+    else if (userChoice == "g" && compChoice == "w") {
+        alert("Computer Won");
+    }
+    else
+    {
+        alert("Made By Rudraksh Popli");
+    }
+    let askingPlayer = confirm("Wanna Play Again?");
+    if (!askingPlayer) {
+        break;
+    }
+}
