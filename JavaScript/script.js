@@ -1,5 +1,8 @@
-console.log(document.head, typeof document.head);
-console.log(document.documentElement, typeof document.documentElement);
-console.log(document.title, typeof document.title);
-console.log(document.body, typeof document.body);
-document.title = "Rudraksh's Webpage";
+console.log(document.body.firstChild);
+console.log(document.body.lastChild);
+console.log(document.body.childNodes);
+console.log(document.body.childNodes[0] == document.body.firstChild);
+console.log(document.body.childNodes[document.body.childNodes.length - 1] == document.body.lastChild);
+console.log(document.body.hasChildNodes());
+let arr = Array.from(document.body.childNodes);
+console.log(arr);
