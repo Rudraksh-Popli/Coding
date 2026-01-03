@@ -1,8 +1,5 @@
-console.log(document.body.firstChild);
-console.log(document.body.lastChild);
-console.log(document.body.childNodes);
-console.log(document.body.childNodes[0] == document.body.firstChild);
-console.log(document.body.childNodes[document.body.childNodes.length - 1] == document.body.lastChild);
-console.log(document.body.hasChildNodes());
-let arr = Array.from(document.body.childNodes);
-console.log(arr);
+console.log(document.body.childNodes[1]);
+const a = document.body.childNodes[1];
+console.log(a.parentNode);
+console.log(a.parentElement);
+console.log(a.childNodes[1].nextSibling.nextSibling);
