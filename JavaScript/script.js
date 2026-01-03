@@ -1,5 +1,6 @@
-console.log(document.body.childNodes[1]);
-const a = document.body.childNodes[1];
-console.log(a.parentNode);
-console.log(a.parentElement);
-console.log(a.childNodes[1].nextSibling.nextSibling);
+const changeBGred = () => {
+    document.body.firstElementChild.style.background = "red";
+}
+let b = document.body;
+console.log("First child of body is : ", b.firstChild);
+console.log("First Element child of body is : ", b.firstElementChild);
